@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <style>
+        
+        /* combinators */
+        /* 3. General sibling - use '~' (this general sibling styling will apply to the general sibling of p tag that is both the b tag ) */
+
+        p ~ b{
+            color: red;
+        }
+        
+        /* 4. Adjacent sibling - use '+' (this adjacent styling will only apply to the adjacent sibling of p tag that is b tag)  */
+
+        p + b{
+            background-color: blue;
+        }
+        
+    </style>
+</head>
+<body>
+    
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Eius, quibusdam? Ea non doloremque aliquam quisquam quaerat neque aspernatur debitis. Iusto?</p>
+    <b>Good morning</b>
+    <h1>Acropolis</h1>
+    <b>hello students</b>
+
+</body>
+</html>

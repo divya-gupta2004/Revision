@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    
+    <!-- Internal CSS and its types:
+    1. By Tag Name
+    2. By ID - (#idname) ID is unique for every tag. we use ID istead of inline CSS beacuse for many webpages we do not have to write css for the same heading, we can use ID for it
+    3. By class - .classname
+    -->
+    
+    <style>
+
+        h1{
+            background-color: blueviolet;
+            text-decoration: overline;
+        }
+        
+        b{
+            font-size: 60px;
+            font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+            border: 4px dashed burlywood;
+            border-radius: 50px;
+            padding: 18px;            
+        }
+
+        #In{
+            background-color: blanchedalmond;
+            padding-top: 70px;
+            /* padding is used inside the box */
+            margin-left: 90px;
+            /* margin will make space between the surrounding content */
+            margin-top: 100px;
+        }
+        
+        /* class can be same for many tags, so it is more better */
+        .hello{
+            background-color: firebrick;  
+            color: antiquewhite;          
+        }
+
+        /* the class name which is written last that is in class="hello hi", hello class will run first then hi will only run */
+        /* the styling which is at the last for that class, it will have the highest priority */
+        .hi{
+            color: blue;
+        }
+
+        /* Combinators types:
+        1. descendents
+        2. child
+        3. general sibling- Raj meena pooja rajesh (Raj is eldest sibling, then meena, then pooja , then rajesh.)
+        4. adjacent sibling - Raj meena pooja rajesh (meena is the adjacent sibling of raj, pooja is the adjacent sibling of  meena)
+        */
+        
+        /* 1. descendants - space */
+        p b {
+            color: red;
+        }
+
+        /* 2. child - use '>' sign */
+        p > b{
+            background-color: aqua;
+        }
+        
+        /* specific paragraph ke bold tag pe  descendant combinator styling */
+        #p1 b{
+            background-color: brown;
+        }
+        
+        /* nesting of  descendant and child combinators */
+
+        /* in this the desendent div tag and inside is the child div and inside the div tag the bold tag styling */
+        div div > b{
+            color: blue;
+
+        }
+
+    
+
+    </style>
+</head>
+<body>
+
+    <h1>Hello Everyone</h1>
+    <b>I am divya</b>
+    <h3>Acropolis</h3>
+
+    <h5 id="In">Indore</h5>
+    <p class="hello hi">Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolorem, rerum?</p>   
+    
+    <p id="p1"> Lorem ipsum, dolor sit amet consectetur adipisicing elit. <b>Neque adipisci nulla exercitationem illum magni</b> atque eveniet minima nihil assumenda <b>aperiam voluptas est, libero omnis non ipsam dicta</b> repellat. Nemo, magni.</p>
+
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. <b>Dolorum, asperiores.</b></p>
+
+    <div style="background-color: antiquewhite;">
+        <div>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Totam quidem deserunt numquam tempora voluptatem dolore dolorem! Eum quo <b>mollitia vel!</b></div>
+
+        <p>Lorem ipsum dolor sitb <b>amet consectetur adipisicing</b> elit. Totam quos quisquam nisi! Libero unde perferendis pariatur a tempore enim cum?</p>
+
+        <div>Lorem ipsum dolor sit amet consectetur adipisicing elit. Laudantium culpa, inventore eveniet nisi quasi eaque repudiandae dicta <b>voluptate cum odit!</b></div>
+    </div>
+</body>
+</html>

@@ -1,0 +1,25 @@
+JavaScript - it is a Client - side scripting language
+
+JS >> Browser >> JS engine (latest is V8 engine for google chrome and Microsoft edge)
+
+Why JavaScript?
+
+1. validation
+2. effects
+3. DHTML (Dynamic HTML) - DOM Manipulate by using JavaScript (DOM is collection of objects. All the tags in html are objects)
+
+**********************************************************************************
+
+JavaScript, Python is a Functional Programming language.
+
+Typed language (requires declaration of variables and its type) : C, C++, JavaScript
+  
+  - it has datatype safety
+                eg: int x;
+
+Non - typed language (does not requires declaration of variables and its type): JS, Python, PHP
+ - we just initialize the variable and does not declare its datatype
+ - it does not have datatype safety
+            eg: x = 45;
+                x = "mahdms";
+                x = 56.47;

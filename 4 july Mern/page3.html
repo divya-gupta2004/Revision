@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    
+    <h1>Vote</h1>
+    <script>
+    function voteCheck() {
+        var nationality = prompt("Are you indian (Y/N)")
+        
+
+        // if-else loop
+        if (nationality == 'y' || nationality == 'Y'){
+
+            var age = parseInt(prompt("Your age"));
+
+            if(age>=18) {
+                document.write("<h1 style='color:green'> You can vote </h1>")
+            } else {
+                document.write("<h1 style='color:red'> you cannot vote </h1>")
+            }
+        } else {
+            if(nationality == 'n' || nationality == 'N') {
+                document.write("<h1 style='color:blue'> you are not allowed </h1>")
+            } else {
+                document.write("<h1 style='color:purple'> you have entered a wrong value </h1>")
+            }
+        }
+    }
+
+    // for loop
+
+        for(var x = 1; x<=5; x++) {
+            var name = prompt("Name ");
+            document.write("<h1 style='color:black'>", name , "</h1>")
+            voteCheck();
+        }
+    
+    </script>
+</body>
+</html>

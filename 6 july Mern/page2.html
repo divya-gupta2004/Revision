@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Password</title>
+
+    <script>
+
+        function change() {
+            // to show/hide password by using eye
+
+            var ob = document.getElementById('t1');
+            if(ob.type == "password")
+                ob.type = "text";    // use text type to show the password
+            else
+                ob. type = "password";   // use password type to hide password
+        }
+    </script>
+</head>
+<body>
+
+    <input type="password" id="t1">
+    <button onclick="change()">show/hide</button>
+    
+</body>
+</html>

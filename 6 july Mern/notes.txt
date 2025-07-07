@@ -1,0 +1,16 @@
+innerHTML
+
+innerText - we can access and change the input 
+
+value - we can take input from user
+
+event - is a predefined object. each event has its object
+
+event listener - function
+
+event object (event information, source(woh vala element jispe event hua tha))  
+
+KeyEvent -  1) KeyUp - Ui ke print hone ke baad KeyUp chalta hai
+            2) KeyDown - kisi bhi event pe display hone se pehle KeyDown chalta hai
+            
+            onkeydown = "function_name(event)"  --> syntax for key event

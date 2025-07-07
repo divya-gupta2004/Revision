@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculation</title>
+
+    <script>
+
+        function add() {
+            var x = parseInt(document.getElementById('t1').value);
+            var y = parseInt(document.getElementById('t2').value);
+
+            var z = x + y;
+            // alert(z);  // to show result in alert
+            document.getElementById('res').innerText = z;  // to show result in result line 
+        }
+
+        function subtract() {
+            var x = parseInt(document.getElementById('t1').value);
+            var y = parseInt(document.getElementById('t2').value);
+
+            var z = x - y;
+            document.getElementById('res').innerText = z;
+        }
+    </script>
+</head>
+<body>
+    
+    <h1>Calculation</h1>
+
+    <input type="number" placeholder="First number" id="t1">
+    <input type="number" placeholder="second number" id="t2">
+    <br><br>
+    <b>Result : <span id="res">0</span></b>
+    <br><br>
+    <button onclick="add()">Addition</button>
+    <button onclick="subtract()">Subtract</button>
+    
+</body>
+</html>

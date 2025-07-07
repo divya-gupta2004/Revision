@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JavaScript day 2</title>
+
+    <script>
+        const fun = () => {
+            let name = document.getElementById("header");
+            name.innerHTML = "H1 has changes";
+        }
+
+        function fun1() {
+            var obj = document.getElementById("label");
+            alert(obj.innerText);
+        }
+
+        function fun2() {
+            var ob = document.getElementById("label");
+            ob.innerText = "Good Evening";
+        }
+
+        function fun3() {
+            var object = document.getElementById("t1");
+            object.value = "hello all"
+        }
+        
+        function fun4() {
+            var object = document.getElementById("t1");
+            alert(object.value);
+        }
+
+    </script>
+</head>
+<body>
+    
+    <h1 id="header">Hello World</h1>
+    <button onclick="alert('hello, how are you?')">Click me</button>
+    <button onclick="fun1()">submit</button>
+    <button onclick="fun2()">reset</button>
+    <br>
+    <hr>
+    <br>
+
+    <input type="text" id="t1" value="hi">
+    <br><br>
+    <button onclick="fun3()">1st button</button>
+    <button onclick="fun4()">2nd button</button>
+
+    <h2 id="label">acropolis</h2>
+</body>
+</html>

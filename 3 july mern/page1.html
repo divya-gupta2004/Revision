@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <form action="hello.html">
+        <!-- Html5 gives validation support which earlier HTML did not have this feature -->
+    <input type="text" placeholder="Name" required> <br> <br>
+        <!-- required property is used to fill out the necessary information and if the user did  not fill out then it show that 'Please fill out this field' -->
+    <input type="email" placeholder="Email" required> <br><br>
+    <input type="password" minlength="8" maxlength="10" placeholder="Password" required> <br><br>
+    <input type="number" min="18" max="25" placeholder="Age" required> <br><br>
+    <input type="date" required> <br><br>
+
+    <input type="submit" value="Register">
+
+    <!-- validation types
+    1. required - required is used for "Please fill out this field" alert if the user did not fill anything
+    2. length - length is used for minlength and maxlength of characters in password 
+    3. range - range is used for min or max range of numbers in AGE
+    4. email - email is used for  typing only e ail and nothing else
+    5. numbers - numbers is used for typing numbers only and nothing else -->
+
+    </form>
+    
+</body>
+</html>

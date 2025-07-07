@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Student mark's</title>
+
+    <script>
+         function fun1() {
+            var a = parseInt(document.getElementById('t1').value);
+            var b = parseInt(document.getElementById('t2').value);
+            var c = parseInt(document.getElementById('t3').value);
+            var d = parseInt(document.getElementById('t4').value);
+            var e = parseInt(document.getElementById('t5').value);
+
+            var z = a + b + c + d + e;                       // total marks
+            document.getElementById('total').innerText = z;
+            
+            var y = (z / 500) * 100;                         // percentage
+            document.getElementById('per').innerText = y.toFixed(2); // 'toFixed(2)' is used to show percentage up to 2 decimal places
+            
+            var x = document.getElementById('grade');        // grades
+            if(y >= 90){
+               x.innerText = "A";
+            } else if(y >= 80) {
+                x.innerText = "B";
+            } else if(y >= 70) {
+                x.innerText = "C";
+            } else if(y >= 60) {
+                x.innerText = "D";
+            } else if(y >= 50) {
+                x.innerText = "E";
+            } else {
+                x.innerText = "F";
+            }
+
+         }
+
+         
+    </script>
+</head>
+
+    <h1>Student Marks's</h1>
+    
+    <p>Chemistry: <input type="number" id="t1" placeholder="enter marks"></p>
+    
+    <p>Maths: <input type="number" id="t2" placeholder="enter marks"> </p>
+
+    <p>Physics: <input type="number" id="t3" placeholder="enter marks"> </p>
+    
+    <p>Hindi: <input type="number" id="t4" placeholder="enter marks"> </p>
+    
+    <p>English: <input type="number" id="t5" placeholder="enter marks"> </p>
+
+    <br>
+
+    <h3>Total marks: <span id="total">0</span></h3>
+    <h3>Percentage: <span id="per">0</span> <span>%</span></h3>
+    <h3>Grade: <span id="grade">0</span></h3>
+    <button onclick="fun1()">Calculate</button>
+
+</body>
+</html>

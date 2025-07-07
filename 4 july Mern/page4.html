@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    
+    <script>
+        // array
+
+        var arr = [33, 22, "divya", true, 54.32, null];
+
+        console.log(arr);
+        console.log(arr[5]);
+        console.log(typeof arr[1]);
+        console.log(typeof arr[5]);
+        
+        // push function - to add new elements in an array
+        // pop funtion - to delete elements in an array from last
+        arr.push(23, false, 0) 
+        
+        console.log(arr);
+
+        arr.pop()
+
+        console.log(arr);
+
+        // arr.splice(3,1)     // splice function is used to delete elements from an array in 3rd index and only 1 element to be deleted
+        // arr.splice(start indexing, no. of elements to be deleted (here is 1 element to be deleted))
+
+        arr.splice(3, 0, 45, 46, 47)  // splice is also used to add values in an array 
+        // arr.splice(start indexing, end indexing or no. of elements to be deleted, write values to be added) 
+        console.log(arr);
+        
+
+        arr.splice(3, 6, "d", true)  // deleting 6 elements from 3rd indexing and adding "d" and true
+        console.log(arr);
+        
+        
+        
+
+        // for loop (basic traditional for loop)
+
+        // for(var x =0; x < arr.length; x++)    // this is used for writing an array with specific indexing
+        //     console.log(arr[x]);
+        
+        // for loop using in keyword
+
+        for( var x in arr) 
+            console.log(x, arr[x]);
+
+        // for loop using of keyword
+        
+        // for(var x of arr)
+        //     console.log(x);
+            
+            
+        
+
+        
+    </script>
+    
+</body>
+</html>

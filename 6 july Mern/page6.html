@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <script>
+        
+         // KEY EVENT - this prevents us from typing anything on the UI
+
+         function check(evt) {       
+            // evt.preventDefault();   // this prevents us from typing anything on the input 
+
+            var code = evt.keyCode;      // this will give the keycode of the  keys on the keyboard and not the ASCII value
+            console.log(code);
+            if(!(code>=48 && code<=70)){    // in this, the keys having the code greater than 48 and less than 70  will be able to write on UI, but key code greater than 70 will not type on the UI
+                evt.preventDefault();
+            }
+            
+         }
+
+    </script>
+</head>
+<body>
+
+    <input type="text" placeholder="enter text" onkeydown="check(event)">
+    <br><br>
+    <input type="number" placeholder="enter number" onkeydown="check(event)">
+    
+</body>
+</html>

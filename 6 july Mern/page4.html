@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <script>
+
+        function fun1(evn) {
+            var ob = evn.target;
+            alert(ob.innerText);
+        }
+
+         function fun2(ob) {
+            
+            alert(ob.innerText);
+        }
+
+    </script>
+</head>
+<body>
+
+    <h1 onclick="fun1(event)">Indore</h1>
+    <h1 onclick="fun1(event)">Bhopal</h1>
+    <h1 onclick="fun1(event)">Ujjain</h1>
+    <br><hr><br>
+    <h1 onclick="fun2(event.target)">Bat</h1>
+    <h1 onclick="fun2(event.target)">Ball</h1>
+    <h1 onclick="fun2(event.target)">Umbrella</h1>
+     <br><hr><br>
+    <h1 onclick="fun2(this)">Bat</h1>
+    <h1 onclick="fun2(this)">Ball</h1>
+    <h1 onclick="fun2(this)">Umbrella</h1>
+
+    <!-- 'this' and 'event.target' are same. there is no difference. we can use both -->
+</body>
+</html>
