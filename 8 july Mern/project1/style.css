@@ -1,3 +1,4 @@
+/*
 #lbl {
     background-color: aquamarine;
     text-align: center;
@@ -14,10 +15,137 @@
     width: 300px;
     font-weight: 1000;
     box-shadow: 1px 1px red;
-}
+} */
 
-#addbtn{
-    /* making the button in center using 'margin-left' */
+/* #addbtn{
+    /* making the button in center using 'margin-left' 
     margin-left: 500px;  
 
+} */
+
+
+/* Reset default styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
 }
+
+/* Body styling */
+body {
+    background: linear-gradient(to right, #74ebd5, #acb6e5);
+    /* background: white; */
+    padding: 30px;
+    color: #333;
+}
+
+/* Header */
+#lbl {
+    text-align: center;
+    font-size: 36px;
+    margin-bottom: 10px;
+    color: #2c3e50;
+}
+
+/* Section headings */
+h5 {
+    font-size: 20px;
+    margin-bottom: 10px;
+    color: #2d3436;
+    text-align: center;
+}
+
+/* Form styling */
+form {
+    background-color: #ffffffcc;
+    padding: 20px;
+    border-radius: 12px;
+    width: 90%;
+    max-width: 900px;
+    margin: 0 auto 30px auto;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+}
+
+/* Input boxes */
+.box,
+select {
+    padding: 10px 14px;
+    border: 1px solid #ccc;
+    border-radius: 6px;
+    width: 200px;
+    transition: all 0.3s ease-in-out;
+    margin-left: 40px;
+}
+
+.box:focus,
+select:focus {
+    outline: none;
+    border-color: #0984e3;
+    box-shadow: 0 0 5px rgba(9, 132, 227, 0.5);
+}
+
+/* Button styling */
+#addbtn {
+    padding: 10px 20px;
+    background-color: #00b894;
+    color: white;
+    border: none;
+    border-radius: 6px;
+    cursor: pointer;
+    transition: background 0.3s ease;
+    font-weight: bold;
+    /* making the button in center using 'margin-left' */
+    margin-left: 360px; 
+}
+
+#addbtn:hover {
+    background-color: #019875;
+}
+
+/* Table styling */
+table {
+    width: 100%;
+    max-width: 1000px;
+    margin: auto;
+    background-color: white;
+    border-collapse: collapse;
+    border-radius: 10px;
+    overflow: hidden;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
+}
+
+thead {
+    background-color: #0984e3;
+    color: white;
+    font-size: 18px;
+}
+
+td,
+th {
+    text-align: center;
+    padding: 12px;
+}
+
+tbody tr:nth-child(even) {
+    background-color: #f1f2f6;
+}
+
+tbody tr:hover {
+    background-color: #dfe6e9;
+}
+
+/* Delete Button */
+td button {
+    padding: 6px 12px;
+    background-color: #d63031;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+td button:hover {
+    background-color: #c0392b;
+}
+

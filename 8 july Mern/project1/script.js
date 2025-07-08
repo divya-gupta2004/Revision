@@ -45,7 +45,7 @@ function add(evt){
     var td8 = document.createElement('td');
     var btn = document.createElement('button')
     btn.innerText = "Delete";
-    // annonymous function (but it will have no name)
+    // Annonymous function (but it will have no name)
     btn.onclick = function() {
         // tr.remove();   // 'remove()'  function is used in JS to remove any element  // another way to remove
         // btn.parentElement.parentElement.remove();  // another way to remove 
@@ -68,8 +68,9 @@ function add(evt){
     tr.appendChild(td5);
     tr.appendChild(td6);
     tr.appendChild(td7);
+    tr.appendChild(td8);
 
     tb.appendChild(tr);
-
+    
     evt.target.reset();
 }
