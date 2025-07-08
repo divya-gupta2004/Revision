@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h4>Student List</h4>
+    
+    <input type="text" placeholder="enter your name" id="t1">
+    <button onclick="fun1()">Add Student</button>
+    <ol id="list">
+        <li>Vikas</li>
+        <li>Lokesh</li>
+    </ol>
+
+    <script>
+        function fun1() {
+
+            var lst = document.getElementById('list')
+            var a = document.getElementById('t1').value
+            alert(a);
+            
+            // Creating Li using DOM. this Li is not present in HTML. Only tag is present in HTML.
+            
+            // For this we will use 'document.createElement("tag_name")' 
+
+            var liobj = document.createElement("li");    // 'li' is created by empty
+            liobj.innerText = a;
+            console.log(liobj);
+
+            lst.appendChild(liobj);   // now we can dynamically add elements in an 'Li'
+            
+        }
+  
+    </script>
+
+</body>
+</html>

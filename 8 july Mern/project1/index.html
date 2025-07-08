@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>project</title>
+
+    <link rel="stylesheet" href="./style.css">
+</head>
+<body onload="init()">
+    <h1 id="lbl">Student Records</h1>
+    <hr>
+    <h5>Add New Student</h5>
+
+    <div>
+
+        <!-- onsubmit is the onsubmit event  -->
+        <form onsubmit="add(event)">   
+
+    <input type="text" class="box" placeholder="Roll number" id="rollbox" required>
+    &nbsp; &nbsp; &nbsp; &nbsp;
+    <input type="text" class="box" placeholder="Name" id="namebox" required>
+    &nbsp; &nbsp; &nbsp; &nbsp;
+    <select id="branchbox" required>
+        <option value="">Choose Branch</option> 
+        <!-- value is used to make that option as required that you need to select some option -->
+        <option>CSE</option>
+        <option>IT</option>
+        <option>ECE</option>
+    </select>
+    <br><br>
+
+    <input type="number" class="box" placeholder="JavaScript" id="jsbox" required>
+    &nbsp; &nbsp; &nbsp; &nbsp;
+    <input type="number"  class="box" placeholder="DBMS" id="dbmsbox" required>
+    &nbsp; &nbsp; &nbsp; &nbsp;
+    <input type="number" class="box" placeholder="OOPs" id="oopsbox" required>
+    <br><br>
+
+    <button id="addbtn">Add Student</button>
+
+    </form>
+
+    </div>
+
+    <hr> <br>
+ 
+    <table align="center" border="1" cellspacing="5" cellpadding="10" id="table">
+        <thead>
+            <th>Roll No.</th>
+            <th>Name</th>
+            <th>Branch</th>
+            <th>JavaScript</th>
+            <th>DBMS</th>
+            <th>OOPs</th>
+            <th>Total marks</th>
+            <th>Delete</th>
+        </thead>
+
+        <tbody id="tb">
+            <tr>
+            <td>46</td>
+            <td>Divya</td>
+            <td>IT</td>
+            <td>90</td>
+            <td>90</td>
+            <td>90</td>
+            <td>270</td>
+            <td>
+                <button>Delete</button>
+            </td>
+            </tr>
+        </tbody>
+    </table>
+</body>
+<script src="./script.js"></script>
+</html>

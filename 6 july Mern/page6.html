@@ -15,7 +15,7 @@
             var code = evt.keyCode;      // this will give the keycode of the  keys on the keyboard and not the ASCII value
             console.log(code);
             if(!(code>=48 && code<=70)){    // in this, the keys having the code greater than 48 and less than 70  will be able to write on UI, but key code greater than 70 will not type on the UI
-                evt.preventDefault();
+                evt.preventDefault();    // this function cancels the the event 
             }
             
          }

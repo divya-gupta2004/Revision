@@ -1,0 +1,23 @@
+#lbl {
+    background-color: aquamarine;
+    text-align: center;
+    color: blueviolet;
+}
+
+#table{
+    background-color: bisque;
+    color: blue;
+    border: 3px double black;
+}
+
+.box{
+    width: 300px;
+    font-weight: 1000;
+    box-shadow: 1px 1px red;
+}
+
+#addbtn{
+    /* making the button in center using 'margin-left' */
+    margin-left: 500px;  
+
+}

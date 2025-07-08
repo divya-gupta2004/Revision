@@ -17,12 +17,20 @@
 
     <input type="submit" value="Register">
 
-    <!-- validation types
+    <!-- validation types (these validation types will only work if they are inside the 'form' tag)
     1. required - required is used for "Please fill out this field" alert if the user did not fill anything
     2. length - length is used for minlength and maxlength of characters in password 
     3. range - range is used for min or max range of numbers in AGE
-    4. email - email is used for  typing only e ail and nothing else
+    4. email - email is used for  typing only email and nothing else
     5. numbers - numbers is used for typing numbers only and nothing else -->
+
+
+    <!-- 
+    form tag working steps:
+    1. validation check - it checks all the input fields are filled then only it will 
+    2. onsubmit event activated (this event only works in FORM tag) (onsubmit = "function_name" -> syntax) -> the js function for this event is activated. if we are using only JS and no server is there, then we will stop the form tag from going to the 3rd step that is 'data server send step'. it will run till 2nd step only
+    3. data server send - it wills send data to the server. but if we are using js only without making server, then it will refersh the page and will send the data to that page only. So to stop this we will use 'event'
+    -->
 
     </form>
     
