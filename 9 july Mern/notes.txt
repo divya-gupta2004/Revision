@@ -1,0 +1,33 @@
+JavaScript Object - it stores the data in the form of 'key - value'
+------------------
+
+Eg: 
+var ob = {
+        roll : 101,
+        name : "divya",
+        city : "indore"
+        }
+
+ob.name;
+ob.roll;
+ob.city;
+
+- Inside the object, 'roll, name, city' are properties. Properties/Keys in an object are unique and cannot be duplicated. The values of keys/properties can be duplicated but not the keys.
+
+*******************************************************************************************
+
+JSON - used for data tranferring/communication between server and client. Data is transferred in the   
+-----  form of 'STRINGS'. JSON is light weight as compared to XML
+
+
+- HTML does not identify data.
+- HTML mei pre-defined tags lagte hai
+
+-XML - mei user defined tags lagte hai
+----
+
+XML eg:  <student>
+                <roll>101</roll>
+                <name>vikas</name>
+                <age>23</age>
+        </student>

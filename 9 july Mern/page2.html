@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+
+        var students = [
+            {
+                roll : 45,
+                name : 'divya',
+                age : 21,
+                marks : 345.77,
+                mobile : "375472423847",
+                phone_no : ["37462348", "12736129873"],   // we can use array to store multiple values, but it does not tell us the property of data stored
+                phone : {
+                    student : "2346813",
+                    father : "21736821"
+                }
+
+            },
+
+            {
+                roll : 46,
+                name : 'daksh',
+                age : 23,
+                marks : 345.77,
+                mobile : "375472423847",
+                phone_no : ["37462348", "12736129873"],   // we can use array to store multiple values, but it does not tell us the property of data stored
+                phone : {
+                    student : "2346813",
+                    father : "21736821"
+                }
+            },
+
+            {
+                roll : 47,
+                name : 'div',
+                age : 25,
+                marks : 345.77,
+                mobile : "375472423847",
+                phone_no : ["37462348", "12736129873"],   // we can use array to store multiple values, but it does not tell us the property of data stored
+                phone : {
+                    student : "2346813",
+                    father : "21736821"
+                }
+            }
+        ]
+
+        console.log(students);
+
+        var str = JSON.stringify(students);   // converting object to JSON i.e. in strings form
+        console.log(str);
+
+        var object = JSON.parse(str);  // converting JSON to object form
+        console.log(object);
+        
+        
+        
+        // for(var sd of students){                   // to print specific or all details of students object for all the 3 entries
+        //     console.log(sd.roll, sd.name);
+            
+        // }
+
+
+    </script>
+    
+</body>
+</html>
