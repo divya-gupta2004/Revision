@@ -1,0 +1,7 @@
+Javascript : Client - side scripting language
+
+JS engine > runs > Browser
+
+Google V8 engine
+
+Node provides run - time environment to run JS code. It is not a language. 
